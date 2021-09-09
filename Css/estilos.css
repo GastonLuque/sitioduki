@@ -1,0 +1,113 @@
+/*colores*/
+/*fuentes*/
+/*colores*/
+/*fuentes*/
+@media only screen and (min-width: 1024px) {
+  .contenedor__nav {
+    position: sticky;
+    z-index: 999;
+    top: 0; } }
+
+.logo--tamanio {
+  width: 60px;
+  height: auto;
+  margin: 0; }
+  @media screen and (max-width: 480px) {
+    .logo--tamanio {
+      width: 70px;
+      align-items: flex-end; } }
+
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    background: #36393c; } }
+
+@media only screen and (max-width: 480px) {
+  .navbar-collapse {
+    background-image: linear-gradient(#0c2642, #225250); } }
+
+.navbar-toggler {
+  background-image: linear-gradient(#0c2642, #225250); }
+
+.nav-link {
+  color: white !important; }
+
+@media only screen and (min-width: 1024px) {
+  .nav--tamanio {
+    font-size: 20px; } }
+
+@media only screen and (max-width: 480px) {
+  .nav--tamanio {
+    margin: 0px 15px; } }
+
+.nav--item {
+  padding: 0px 7px;
+  transition: all 1s; }
+
+.nav--item:hover {
+  transform: translate3d(10px);
+  background-color: #eaa928;
+  border-radius: 10px; }
+
+/*colores*/
+/*fuentes*/
+/*colores*/
+/*fuentes*/
+/*album index*/
+.container__texto {
+  border: ridge 2px gray;
+  margin: 10px 0px;
+  background-color: #27cca3; }
+
+/*colores*/
+/*fuentes*/
+.tabla {
+  justify-content: space-around; }
+  .tabla__titulo1 {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-image: linear-gradient(red, yellow, red);
+    transition: all 2s; }
+  .tabla__titulo1:hover {
+    transform: translatey(8px); }
+  .tabla__titulo2 {
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(#75AADB, white, #75AADB);
+    transition: all 2s; }
+  .tabla__titulo2:hover {
+    transform: translateY(8px); }
+  .tabla__texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; }
+  .tabla__parrafo {
+    position: relative;
+    border: solid 2px black;
+    clear: none; }
+  .tabla__img {
+    padding-bottom: 20px; }
+
+/*colores*/
+/*fuentes*/
+/*incio de scss tienda*/
+.row {
+  margin-right: 0; }
+
+.tienda__titulo {
+  font-family: 30px;
+  text-align: center;
+  padding: 10px;
+  /*animacion con wow js */ }
+
+.caja__ropa__imagen {
+  padding: 10px;
+  margin-right: 10px; }
+
+.caja__ropa__imagen:hover {
+  transform: scale(1, 1.05); }
+
+.caja__ropa__precio {
+  text-align: center; }
+
+.caja__ropa__titulo {
+  text-align: center; }

@@ -1,0 +1,55 @@
+@import "variables";
+.contenedor__nav{
+    @media only screen and (min-width:1024px){
+        position: sticky;
+        z-index: 999;
+        top: 0;
+    }
+}
+.logo{
+    &--tamanio{
+        width: 60px;
+        height: auto;
+        margin: 0;
+        @media screen and (max-width:480px){
+            width: 70px;
+            align-items: flex-end;
+        }
+    }
+}
+.navbar{
+    @media only screen and (min-width:1024px){
+        background:$rgbalbum;
+        
+    }    
+        &-collapse{
+            @media  only screen and (max-width: 480px){
+                background-image:linear-gradient($rgbnav1) ;
+            }
+        }
+        &-toggler{
+           background-image:linear-gradient( $rgbnav1) ;
+        }
+}
+.nav{
+    &-link{ 
+        color:$blanco !important;
+    }
+    &--tamanio{
+        @media only screen and (min-width:1024px){
+            font-size: $pdesktop;
+        }
+        @media only screen and (max-width:480px){
+            margin: 0px 15px ;
+        }
+    }
+    &--item{
+        padding:0px 7px;
+        transition: all 1s;
+    }
+    &--item:hover{
+      transform: translate3d(10px);
+      background-color: $rgbbottom;
+      border-radius: 10px;
+    }
+}

@@ -1,0 +1,28 @@
+@import "variables";
+/*incio de scss tienda*/
+.row{
+    margin-right: 0;
+}
+.tienda__titulo{
+    font-family: 30px;
+    text-align: center;
+    padding: 10px;
+    /*animacion con wow js */
+}
+.caja{
+    
+   &__ropa{ 
+       &__imagen{
+           padding: 10px;
+        margin-right: 10px;
+    }
+       &__imagen:hover{transform: scale(1.0,1.05);}
+       
+       &__precio{
+         text-align: center;
+       }
+       &__titulo{
+           text-align: center;
+       }
+   }
+}
