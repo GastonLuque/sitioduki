@@ -1,0 +1,35 @@
+@import "variables";
+.eventos__body{
+    background-image: url(../assets/img/eventos.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+.tabla{
+    justify-content: space-around;
+    &__titulo1{
+        text-align: center;
+        color: $blanco;
+        padding: 10px;
+    }
+    &__titulo2{
+        text-align: center;
+        padding: 10px;
+        color: $blanco;
+    }
+    &__img{
+        padding-bottom: 20px;
+       
+    }
+}
+.encabezado{
+    &__img{
+
+        position: absolute;
+    }
+}
+.imagen__parrafo{
+    position: relative;
+}

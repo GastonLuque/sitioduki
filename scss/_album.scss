@@ -1,19 +1,47 @@
 @import "variables";
 /*album index*/
-$estilos:(
-    color: white,
-    color2:blue,
-    color3:rgb(39, 204, 163),
-    color4: black,
-    tFuentedesk:16px,
-    titMob:18px,
-    titdesk: 22px,
-    bordes:ridge 2px gray,
-    margin: 10px 0px,
-      
-);
-.container__texto{
-    border: map-get($estilos ,bordes);
-    margin:map-get($estilos , margin );
-    background-color: map-get($estilos , color3 );
-}   
+
+.album{
+    margin-bottom: 10px;
+    &__texto__encabezado{
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 40px;
+        padding: 10px;
+        @media only screen and (max-width:480px){
+            margin-top: 5px;
+            font-size: 22px; 
+            padding: 7px;
+        }
+    }
+    &__imagen{
+        @media only screen and (min-width:1023px){
+            height: 650px;
+            margin-left: 10px;
+        } 
+    }
+    &__lista{
+        display: flex;
+        flex-direction: column;
+        padding-left:20px;
+        font-family: Cambira;  
+        font-size: 18px;
+        list-style-type: none; 
+        align-items: flex-start;
+            @media only screen and (max-width:1022px){
+            display: none;
+            }
+        &__temas{
+            color: peru;
+            padding-bottom: 10px;   
+            transition: all 2s; 
+        }
+
+        &__temas:hover{
+            font-family: cambira;
+            text-decoration: none;
+            color: #4586DE;
+            
+        }
+    }    
+}

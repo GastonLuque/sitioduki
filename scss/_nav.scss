@@ -1,9 +1,13 @@
 @import "variables";
-.contenedor__nav{
-    @media only screen and (min-width:1024px){
+.contenedor__nav{ 
+    @media only screen and (max-width:480px) {
+        border: none;
+    }
+    @media only screen and (min-width:720px){
         position: sticky;
         z-index: 999;
         top: 0;
+        padding-right:0px ;
     }
 }
 .logo{
@@ -18,13 +22,13 @@
     }
 }
 .navbar{
-    @media only screen and (min-width:1024px){
+    @media only screen and (min-width:720px){
         background:$rgbalbum;
         
     }    
         &-collapse{
             @media  only screen and (max-width: 480px){
-                background-image:linear-gradient($rgbnav1) ;
+                background-color:$rgbalbum;
             }
         }
         &-toggler{
@@ -34,6 +38,7 @@
 .nav{
     &-link{ 
         color:$blanco !important;
+        font-family: monospace;
     }
     &--tamanio{
         @media only screen and (min-width:1024px){
