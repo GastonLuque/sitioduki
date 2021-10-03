@@ -15,7 +15,7 @@
   <body class="eventos__body">
       <!-- inicio de la nav -->
 		  <!-- inicio de encabezado -->
-    <header class="container-fluid ">
+    <header class="container-fluid contenedor__nav ">
       <nav class="navbar navbar-expand-sm navbar-light  row">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
           <span class="navbar-toggler-icon"></span>
@@ -47,11 +47,10 @@
       </nav>
     </header>
       <!-- cierre de la nav -->
-    <!--inicio de la lista  -->
-    <h1>Proximos Eventos</h1>
-    <table class="table tabla">
-        <h3 class="tabla__titulo1 col-lg-12 col-xs-12">España</h3>
-        <thead class="thead-dark">
+    <!--inicio de la tabla  -->
+    <h1 class="titulo__encabezado">Proximos Eventos</h1>
+    <table class="table tabla col-lg-7 col-xs-12">  
+      <thead class="thead-dark ">
             <tr class=" tabla--posicion">
               <th scope="col" class="tabla__texto">Fecha</th>
               <th scope="col" class="tabla__texto">Ciudad</th>
@@ -61,40 +60,39 @@
         </thead>
       <tbody>
         <tr>
-          <th scope="row">13/10</th>
-          <td>Madrid</td>
-          <td>Palacio De Vistalegre</td>
-          <td>20 : 00 hs</td>
+          <th class="tabla__item" scope="row">13/10</th>
+          <td  class="tabla__item">Madrid</td>
+          <td  class="tabla__item">Palacio De Vistalegre</td>
+          <td  class="tabla__item">20 : 00 hs</td>
         </tr>
         <tr>
-          <th scope="row">17/10</th>
-          <td>Sevilla</td>
-          <td>Auditorio Rocio Jurado</td>
-          <td>21 : 30 hs</td>
+          <th  class="tabla__item" scope="row">17/10</th>
+          <td  class="tabla__item">Sevilla</td>
+          <td  class="tabla__item">Auditorio Rocio Jurado</td>
+          <td  class="tabla__item">21 : 30 hs</td>
         </tr>
         <tr>
-          <th scope="row">22/10</th>
-          <td>Almeria</td>
-          <td>Recinto Ferial</td>
-          <td>22 : 00 hs</td>
+          <th  class="tabla__item" scope="row">22/10</th>
+          <td  class="tabla__item">Almeria</td>
+          <td  class="tabla__item">Recinto Ferial</td>
+          <td  class="tabla__item">22 : 00 hs</td>
         </tr>
         <tr>
-          <th scope="row">25/10</th>
-          <td>Torremolinos</td>
-          <td>Recinto Ferial de Torremolinos</td>
-          <td>22 : 00 hs</td>
+          <th  class="tabla__item" scope="row">25/10</th>
+          <td  class="tabla__item">Torremolinos</td>
+          <td  class="tabla__item">Recinto Ferial de Torremolinos</td>
+          <td  class="tabla__item">22 : 00 hs</td>
         </tr>
         <tr>
-          <th scope="row">28/10</th>
-          <td>Rota</td>
-          <td>Espacio "Rota es Musica"</td>
-          <td>22 : 00 hs</td>
+          <th  class="tabla__item" scope="row">28/10</th>
+          <td  class="tabla__item">Rota</td>
+          <td  class="tabla__item">Espacio "Rota es Musica"</td>
+          <td  class="tabla__item">22 : 00 hs</td>
         </tr>
       </tbody>
     </table>
-    <table class="table tabla">
+    <table class="table tabla col-lg-7 col-xs-12">
       <thead class="thead-dark">
-        <h3 class="tabla__titulo2">Argentina</h3>
         <tr class=" tabla--posicion">
           <th scope="col" class="tabla__texto">Fecha</th>
           <th scope="col" class="tabla__texto">Ciudad</th>
@@ -104,27 +102,40 @@
       </thead>
       <tbody>
         <tr>
-          <th scope="row">19/10</th>
-          <td>Cordoba</td>
-          <td>Quality Espacio</td>
-          <td>21 : 00 hs</td>
+          <th  class="tabla__item" scope="row">19/11</th>
+          <td  class="tabla__item">Cordoba</td>
+          <td  class="tabla__item">Quality Espacio</td>
+          <td  class="tabla__item">21 : 00 hs</td>
         </tr>
         <tr>
-          <th scope="row">24/10</th>
-          <td>Buenos Aires </td>
-          <td>Luna park</td>
-          <td>21 : 30 hs</td>
+          <th  class="tabla__item" scope="row">24/11</th>
+          <td  class="tabla__item">Buenos Aires </td>
+          <td  class="tabla__item">Luna park</td>
+          <td  class="tabla__item">21 : 30 hs</td>
         </tr>
         <tr>
-          <th scope="row">29/10</th>
-          <td>Buenos Aires</td>
-          <td>Teatro Gran Rivadavia</td>
-          <td>20 : 00 hs</td>
+          <th  class="tabla__item" scope="row">29/11</th>
+          <td  class="tabla__item">Buenos Aires</td>
+          <td  class="tabla__item">Teatro Gran Rivadavia</td>
+          <td  class="tabla__item">20 : 00 hs</td>
         </tr>
-        
+        <tr>
+          <th  class="tabla__item" scope="row">5/12</th>
+          <td  class="tabla__item">Salta</td>
+          <td  class="tabla__item">Teatro Juan Carlos Saravia</td>
+          <td  class="tabla__item">21 : 00 hs</td>
+        </tr>
+        <tr>
+          <th  class="tabla__item" scope="row">8/12</th>
+          <td  class="tabla__item">Tucuman</td>
+          <td  class="tabla__item">Teatro Mercedes Sosa</td>
+          <td  class="tabla__item">20 : 00 hs</td>
+        </tr>
       </tbody>
     </table>
-  <footer data-aos="fade-down" data-aos-easing="linear"data-aos-duration="1000" class="container-fluid footer">
+    <!-- cierre de la tabla -->
+    <!-- inicio del footer -->
+    <footer data-aos="fade-down" data-aos-easing="linear"data-aos-duration="1000" class="container-fluid footer">
       <div class="row footer__row">
         <div class="col-xs-10 col-lg-6 text-left">
           <h5 class="footer__titulo">CONTACTO</h5>
@@ -153,6 +164,8 @@
         </div>
       </div>					 
   </footer>
+  <!-- cierre del footer -->
+  <!-- los script -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

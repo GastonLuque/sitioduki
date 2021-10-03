@@ -4,7 +4,7 @@
     margin-top: 40px;
     background-color: $rgbalbum;
     border-top: solid 3px;
-    border-color:$rgbbottom;
+    border-color:$border1nav;
     &__row{
         display: flex;
         align-content: space-between;
@@ -12,9 +12,13 @@
     }
     
     &__titulo{
+        @media only screen and (min-width:780px) {
+            font-size: 22px;
+            font-family: revert;     
+        }
         color: $blanco;
         font-size: 25px;
-        font-family: monospace;
+        font-family: revert;
         padding: 10px;
         margin: 10px 5px;
         text-align: center;
@@ -44,13 +48,18 @@
     &__derechos{
         text-align: center;
         border-top:solid 3px;
-        border-color: white;
+        border-color: $border1nav;
         &__texto{
             color: white;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "revert";
             font-size: 20px;
             padding: 5px;
             box-sizing: border-box;
+            @media only screen and (max-width:480px) {
+                font-size:27px;
+                font-family: "revert"
+                ;
+            }
         }
     }
 }

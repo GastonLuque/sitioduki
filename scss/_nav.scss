@@ -1,9 +1,11 @@
 @import "variables";
 .contenedor__nav{ 
+    border-bottom:solid 4px transparent ;
+    border-color:$border1nav ;
     @media only screen and (max-width:480px) {
         border: none;
     }
-    @media only screen and (min-width:720px){
+    @media only screen and (min-width:481px){
         position: sticky;
         z-index: 999;
         top: 0;
@@ -37,11 +39,12 @@
 }
 .nav{
     &-link{ 
-        color:$blanco !important;
+        color: #008F90 !important ;
         font-family: monospace;
+        transition:all 0s;
     }
     &--tamanio{
-        @media only screen and (min-width:1024px){
+        @media only screen and (min-width:780px){
             font-size: $pdesktop;
         }
         @media only screen and (max-width:480px){
@@ -50,11 +53,11 @@
     }
     &--item{
         padding:0px 7px;
-        transition: all 1s;
+        transition: all 0s;
     }
-    &--item:hover{
-      transform: translate3d(10px);
-      background-color: $rgbbottom;
-      border-radius: 10px;
+    &-link:hover{
+        color: white !important;
+        border-top: solid 3px;
+        border-bottom: solid 3px;
     }
 }

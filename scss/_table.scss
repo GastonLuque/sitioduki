@@ -5,31 +5,30 @@
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
-
 }
+.titulo__encabezado{
+    font-family: "emoji" ;
+    margin-top: 10px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+} 
 .tabla{
-    justify-content: space-around;
-    &__titulo1{
-        text-align: center;
-        color: $blanco;
-        padding: 10px;
+    margin-bottom: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+    border:solid 2px;
+    border-color: white;
+    height: auto;
+    @media only screen and (min-width:1022px){
+        margin: 30px;    
     }
-    &__titulo2{
-        text-align: center;
-        padding: 10px;
-        color: $blanco;
+    &__texto{
+            color: white;
+            font-size: 22px;
     }
-    &__img{
-        padding-bottom: 20px;
-       
-    }
-}
-.encabezado{
-    &__img{
+    &__item{
+        color: white;
 
-        position: absolute;
     }
-}
-.imagen__parrafo{
-    position: relative;
 }
