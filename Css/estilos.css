@@ -5,9 +5,6 @@
 .contenedor__nav {
   border-bottom: solid 4px transparent;
   border-color: #008F90; }
-  @media only screen and (max-width: 480px) {
-    .contenedor__nav {
-      border: none; } }
   @media only screen and (min-width: 481px) {
     .contenedor__nav {
       position: sticky;
@@ -24,16 +21,16 @@
       width: 70px;
       align-items: flex-end; } }
 
-@media only screen and (min-width: 720px) {
-  .navbar {
-    background: #36393c; } }
-
-@media only screen and (max-width: 480px) {
-  .navbar-collapse {
-    background-color: #36393c; } }
-
-.navbar-toggler {
-  background-image: linear-gradient(#0c2642, #225250); }
+.navbar {
+  background: #36393c; }
+  @media only screen and (max-width: 720px) {
+    .navbar {
+      border-bottom: 2px black; } }
+  @media only screen and (max-width: 480px) {
+    .navbar-collapse {
+      background-color: #36393c; } }
+  .navbar-toggler {
+    background-image: linear-gradient(#0c2642, #225250); }
 
 .nav-link {
   color: #008F90 !important;
@@ -74,7 +71,7 @@
   margin-bottom: 10px; }
   .album__texto__encabezado {
     text-align: center;
-    font-family: sans-serif;
+    font-family: "revert";
     font-size: 40px;
     padding: 10px; }
     @media only screen and (max-width: 480px) {
@@ -116,11 +113,14 @@
   background-repeat: no-repeat; }
 
 .titulo__encabezado {
-  font-family: "emoji";
+  font-family: "revert";
   margin-top: 10px;
-  font-size: 40px;
+  font-size: 43px;
   color: white;
   text-align: center; }
+  @media only screen and (max-width: 480px) {
+    .titulo__encabezado {
+      font-size: 33px; } }
 
 .tabla {
   margin-bottom: 30px;
@@ -128,7 +128,7 @@
   box-sizing: border-box;
   border: solid 2px;
   border-color: white;
-  height: auto; }
+  width: 100%; }
   @media only screen and (min-width: 1022px) {
     .tabla {
       margin: 30px; } }
@@ -162,7 +162,8 @@
   margin-right: 10px; }
 
 .caja__ropa__precio {
-  text-align: center; }
+  text-align: center;
+  font-family: sans-serif; }
 
 .caja__ropa__titulo {
   text-align: center; }
@@ -224,7 +225,7 @@
       box-sizing: border-box; }
       @media only screen and (max-width: 480px) {
         .footer__derechos__texto {
-          font-size: 27px;
+          font-size: 20px;
           font-family: "revert"; } }
 
 /*colores*/
@@ -286,8 +287,8 @@
   .galeria__titulo {
     padding: 15px;
     text-align: center;
-    font-family: "emoji";
-    font-size: 40px; }
+    font-family: "cursiva";
+    font-size: 43px; }
   .galeria__img {
     width: 100%;
     height: 100%;

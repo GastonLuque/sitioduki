@@ -7,11 +7,14 @@
     background-repeat: no-repeat;
 }
 .titulo__encabezado{
-    font-family: "emoji" ;
+    font-family: "revert" ;
     margin-top: 10px;
-    font-size: 40px;
+    font-size: 43px;
     color: white;
     text-align: center;
+    @media only screen and (max-width:480px){
+        font-size: 33px;
+    }
 } 
 .tabla{
     margin-bottom: 30px;
@@ -19,7 +22,7 @@
     box-sizing: border-box;
     border:solid 2px;
     border-color: white;
-    height: auto;
+    width: 100%;
     @media only screen and (min-width:1022px){
         margin: 30px;    
     }
