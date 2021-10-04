@@ -11,6 +11,9 @@
       z-index: 999;
       top: 0;
       padding-right: 0px; } }
+  @media screen and (max-width: 480px) {
+    .contenedor__nav {
+      width: 100%; } }
 
 .logo--tamanio {
   width: 60px;
@@ -57,6 +60,7 @@
 /*colores*/
 /*fuentes*/
 .carousel {
+  margin-top: 10px;
   padding: 0; }
   .carousel__titulo {
     font-size: 25px;
@@ -124,11 +128,13 @@
 
 .tabla {
   margin-bottom: 30px;
-  padding: 5px;
-  box-sizing: border-box;
+  width: 330px;
   border: solid 2px;
   border-color: white;
   width: 100%; }
+  @media only screen and (max-width: 480px) {
+    .tabla {
+      width: 100%; } }
   @media only screen and (min-width: 1022px) {
     .tabla {
       margin: 30px; } }
@@ -225,7 +231,7 @@
       box-sizing: border-box; }
       @media only screen and (max-width: 480px) {
         .footer__derechos__texto {
-          font-size: 20px;
+          font-size: 22px;
           font-family: "revert"; } }
 
 /*colores*/

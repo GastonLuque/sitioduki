@@ -18,11 +18,14 @@
 } 
 .tabla{
     margin-bottom: 30px;
-    padding: 5px;
-    box-sizing: border-box;
+    width: 330px;
     border:solid 2px;
     border-color: white;
     width: 100%;
+    @media only screen and (max-width:480px){
+        width: 100%;
+       
+    }
     @media only screen and (min-width:1022px){
         margin: 30px;    
     }
